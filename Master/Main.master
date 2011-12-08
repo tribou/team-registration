@@ -1,0 +1,67 @@
+﻿<%@ Master Language="VB" CodeFile="Main.master.vb" Inherits="Master_Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../styles.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server" style="font: Arial, Helvetica, sans-serif;">
+    <div id="outerWrapper" style="position:relative; margin:auto; max-width: 980px;">
+        <table align="center" cellpadding="0" class="style1">
+            <tr>
+                <td style="text-align: left" width="150px">
+                    <asp:Button ID="btnHome" runat="server" Text="Home" Width="150px" 
+                        Visible="False" />
+                </td>
+                <td style="text-align: center">
+                    &nbsp;</td>
+                <td style="text-align: right" width="150px">
+                    <asp:Button ID="btnReport" runat="server" Text="Current Teams" Width="150px" 
+                        Visible="False" />
+                </td>
+            </tr>
+            <tr>
+                <td height="20px">
+                    &nbsp;</td>
+                <td height="20px">
+                    &nbsp;</td>
+                <td height="20px">
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <%-- 
+    <div id="topBar" style="height: 80px;"></div>
+    <div id="navigation" style="height: 50px; background-color: Silver;">
+    <div id="navigationButtons" style="width: 300px; height:50px; position:relative; margin: 0px auto 0px auto;">
+    
+        <asp:LinkButton ID="lnkRegister" runat="server" Width="150px" Height="40px" 
+            Font-Bold="True" Font-Size="X-Large" 
+        style="text-align: center; padding-top:10px;" CssClass="button" 
+            ForeColor="Black">Register</asp:LinkButton>
+            <asp:LinkButton ID="lnkReports" runat="server" Width="150px" Height="40px" 
+            Font-Bold="True" Font-Size="X-Large" 
+        style="text-align: center; padding-top:10px;" CssClass="button" 
+            ForeColor="Black">Reports</asp:LinkButton>
+    </div>--%>
+
+
+
+
+        <asp:ContentPlaceHolder id="mainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

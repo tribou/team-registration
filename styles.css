@@ -1,0 +1,15 @@
+﻿body 
+{
+	font-family: Arial,Helvetica,Sans-Serif;
+	text-align: left;
+}
+
+.button
+{
+	margin: 0px 0px 0px 0px;
+}
+
+.button:hover
+{
+	background-color: White;
+}
